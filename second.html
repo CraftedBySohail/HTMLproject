@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Lecture 2 :Introduction To HTML</h1>
+        <div class="progress-indicator">
+    <span> ● ● ○ ○ ○ ○</span>
+    <p>Lecture 2 of 6</p>
+</div>
+<table >
+    <tr>
+        <td>
+            <a href="./first.html">
+                <button type="button">← Previous</button>
+            </a>
+        </td>
+        <td>
+             <a href="./third.html">
+                <button type="button">Next →</button>
+            </a>
+        </td>
+    </tr>
+    
+</table>
+        
+   
+  </header>
+  <hr>
+
+  <main>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lecture 1: HTML Basics</title>
+</head>
+<body>
+  <header>
+    <h1>📘 Lecture 1 : HTML – Hyper Text Markup Language</h1>
+    <p>HTML stands for <strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage. It is the standard language used to create and structure webpages.</p>
+    <hr>
+  </header>
+
+  <!-- Definition -->
+  <section>
+    <h2>🔹 What is HTML?</h2>
+    <ul>
+      <li><strong>HyperText:</strong> Ability to create links that connect web pages together.</li>
+      <li><strong>Markup Language:</strong> Use of "tags" to give meaning and structure to plain text.</li>
+    </ul>
+    <p>🌍 First Website:
+      <a href="https://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">https://info.cern.ch/hypertext/WWW/TheProject.html</a>
+    </p>
+  </section>
+
+  <!-- Installation -->
+  <section>
+    <h2>⚙️ Install Required Software</h2>
+    <h3>1. Install Visual Studio Code</h3>
+    <p>Free code editor from Microsoft:
+      <a href="https://code.visualstudio.com/" target="_blank">Download VS Code</a>
+    </p>
+
+    <h3>2. Install Useful VS Code Extensions</h3>
+    <ul>
+      <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server" target="_blank">Live Server (Live Preview)</a></li>
+      <li><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank">Prettier</a></li>
+    </ul>
+  </section>
+
+  <!-- Headings -->
+  <section>
+    <h2>1️⃣ The Heading (&lt;h1&gt; to &lt;h6&gt;)</h2>
+    <p>Used to define titles and subtitles, creating a logical hierarchy.</p>
+
+<pre>
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+</pre>
+
+    <ul>
+      <li><strong>&lt;h1&gt;:</strong> Main title, used once per page.</li>
+      <li><strong>&lt;h2&gt;:</strong> Section heading.</li>
+      <li><strong>&lt;h3&gt;:</strong> Sub-section heading.</li>
+    </ul>
+  </section>
+
+  <!-- Paragraph -->
+  <section>
+    <h2>2️⃣ The Paragraph (&lt;p&gt;)</h2>
+    <p>Defines blocks of text. Browsers add spacing automatically before and after paragraphs.</p>
+
+<pre>
+&lt;p&gt;This is the first paragraph. It contains several sentences.&lt;/p&gt;
+&lt;p&gt;This is a second, separate paragraph.&lt;/p&gt;
+</pre>
+  </section>
+
+  <!-- Horizontal Rule -->
+  <section>
+    <h2>3️⃣ Horizontal Rule (&lt;hr&gt;)</h2>
+    <p>Defines a thematic break, usually displayed as a horizontal line.</p>
+
+<pre>
+&lt;p&gt;This is the first topic.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;This is a completely different topic.&lt;/p&gt;
+</pre>
+  </section>
+
+  <!-- Line Break -->
+  <section>
+    <h2>4️⃣ Line Break (&lt;br&gt;)</h2>
+    <p>Creates a single line break (like pressing Enter once).</p>
+
+<pre>
+&lt;p&gt;221B Baker Street&lt;br&gt;
+London, England&lt;/p&gt;
+</pre>
+  </section>
+
+  <!-- Lists -->
+  <section>
+    <h2>5️⃣ List Elements (&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;)</h2>
+    <p>Used to create lists. Perfect for showing related items.</p>
+
+<pre>
+&lt;ul&gt;
+  &lt;li&gt;Tea Bag&lt;/li&gt;
+  &lt;li&gt;Water&lt;/li&gt;
+  &lt;li&gt;Sugar&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Boil water&lt;/li&gt;
+  &lt;li&gt;Add tea bag, sugar, and milk&lt;/li&gt;
+  &lt;li&gt;Keep boiling for 5 minutes&lt;/li&gt;
+  &lt;li&gt;Serve hot&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+  </section>
+
+  <!-- Anchor Tag -->
+  <section>
+    <h2>6️⃣ The Anchor Tag (&lt;a&gt;)</h2>
+    <p>Makes text or images clickable. Requires the <code>href</code> attribute.</p>
+
+<pre>
+&lt;a href="https://www.coderarmy.in/" target="_blank"&gt;Visit Coder Army&lt;/a&gt;
+</pre>
+
+    <p><strong>target attribute:</strong></p>
+    <ul>
+      <li>_self → Open in same window (default)</li>
+      <li>_blank → Open in new tab</li>
+    </ul>
+  </section>
+
+  <!-- Image Tag -->
+  <section>
+    <h2>7️⃣ The Image Tag (&lt;img&gt;)</h2>
+    <p>Embeds images into a webpage. Requires <strong>src</strong> and <strong>alt</strong> attributes.</p>
+
+<pre>
+&lt;img src="image.png" alt="Description of image"&gt;
+</pre>
+  </section>
+<h2>🔥 Quiz Time — 5 Questions</h2>
+
+    <form>
+      <!-- Q1 -->
+      <fieldset>
+        <legend><strong>1.</strong> What does HTML stand for?</legend>
+        <label><input type="radio" name="q1"> Hyper Text Markup Language</label><br>
+        <label><input type="radio" name="q1"> Hyperlink Text Making Language</label><br>
+        <label><input type="radio" name="q1"> Home Tool Markup Language</label><br>
+        <label><input type="radio" name="q1"> Hyper Transfer Machine Language</label>
+      </fieldset>
+      <br>
+
+      <!-- Q2 -->
+      <fieldset>
+        <legend><strong>2.</strong> Which tag is used for a paragraph?</legend>
+        <label><input type="radio" name="q2"> <code>&lt;p&gt;</code></label><br>
+        <label><input type="radio" name="q2"> <code>&lt;div&gt;</code></label><br>
+        <label><input type="radio" name="q2"> <code>&lt;h1&gt;</code></label><br>
+        <label><input type="radio" name="q2"> <code>&lt;span&gt;</code></label>
+      </fieldset>
+      <br>
+
+      <!-- Q3 -->
+      <fieldset>
+        <legend><strong>3.</strong> Which tag makes a horizontal line / thematic break?</legend>
+        <label><input type="radio" name="q3"> <code>&lt;hr&gt;</code></label><br>
+        <label><input type="radio" name="q3"> <code>&lt;br&gt;</code></label><br>
+        <label><input type="radio" name="q3"> <code>&lt;line&gt;</code></label><br>
+        <label><input type="radio" name="q3"> <code>&lt;rule&gt;</code></label>
+      </fieldset>
+      <br>
+
+      <!-- Q4 -->
+      <fieldset>
+        <legend><strong>4.</strong> Which attribute is required for a link to work?</legend>
+        <label><input type="radio" name="q4"> href</label><br>
+        <label><input type="radio" name="q4"> src</label><br>
+        <label><input type="radio" name="q4"> alt</label><br>
+        <label><input type="radio" name="q4"> id</label>
+      </fieldset>
+      <br>
+
+      <!-- Q5 -->
+      <fieldset>
+        <legend><strong>5.</strong> Which element is for a numbered list?</legend>
+        <label><input type="radio" name="q5"> <code>&lt;ol&gt;</code></label><br>
+        <label><input type="radio" name="q5"> <code>&lt;ul&gt;</code></label><br>
+        <label><input type="radio" name="q5"> <code>&lt;li&gt;</code></label><br>
+        <label><input type="radio" name="q5"> <code>&lt;dl&gt;</code></label>
+      </fieldset>
+      <br>
+
+      <button type="button">Submit </button>
+    </form>
+
+
+  </main>
+<footer>
+    <h4>All rights reserved . &copy; Coder Army</h4>
+
+</footer>
+    
+</body>
+</html>

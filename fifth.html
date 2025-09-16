@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <header>
+        <h1>Lecture 5 :HTML Forms</h1>
+        <div class="progress-indicator">
+    <span> ● ● ● ● ● ○</span>
+    <p>Lecture 5 of 6</p>
+</div>
+<table >
+    <tr>
+        <td>
+            <a href="./fourth.html">
+                <button type="button">← Previous</button>
+            </a>
+        </td>
+        <td>
+             <a href="./sixth.html">
+                <button type="button">Next →</button>
+            </a>
+        </td>
+    </tr>
+    
+</table>
+        
+   
+  </header>
+  <hr>
+
+  <main>
+      <h1>Forms in HTML</h1>
+  <p>This page shows how different form elements work together.</p>
+
+  <form>
+    <!-- Text inputs with labels -->
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName">
+    <br><br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName">
+    <br><br>
+
+    <!-- Password -->
+    <label for="userPass">Password:</label>
+    <input type="password" id="userPass" name="userPassword">
+    <br><br>
+
+    <!-- Number -->
+    <label for="userAge">Age (18-99):</label>
+    <input type="number" id="userAge" name="age" min="18" max="99">
+    <br><br>
+
+    <!-- Date -->
+    <label for="birthDate">Date of Birth:</label>
+    <input type="date" id="birthDate" name="dob">
+    <br><br>
+
+    <!-- Radio buttons -->
+    <p>T-Shirt Size:</p>
+    <input type="radio" id="sizeS" name="shirtSize" value="small">
+    <label for="sizeS">Small</label><br>
+    <input type="radio" id="sizeM" name="shirtSize" value="medium">
+    <label for="sizeM">Medium</label><br>
+    <input type="radio" id="sizeL" name="shirtSize" value="large">
+    <label for="sizeL">Large</label>
+    <br><br>
+
+    <!-- Checkboxes -->
+    <p>Pizza Toppings:</p>
+    <input type="checkbox" id="toppingPep" name="toppings" value="pepperoni">
+    <label for="toppingPep">Pepperoni</label><br>
+    <input type="checkbox" id="toppingMush" name="toppings" value="mushrooms">
+    <label for="toppingMush">Mushrooms</label><br>
+    <input type="checkbox" id="toppingOni" name="toppings" value="onions">
+    <label for="toppingOni">Onions</label>
+    <br><br>
+
+    <!-- Dropdown -->
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="">--Choose an option--</option>
+      <option value="in">India</option>
+      <option value="us">USA</option>
+      <option value="uk">United Kingdom</option>
+      <option value="au">Australia</option>
+    </select>
+    <br><br>
+
+    <!-- Textarea -->
+    <label for="comments">Any special instructions?</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+    <br><br>
+
+    <!-- Submit button -->
+    <button type="submit"><strong>Submit</strong> Your Form</button>
+  </form> 
+  </main>
+    
+
+</body>
+</html>
